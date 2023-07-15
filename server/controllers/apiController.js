@@ -5,10 +5,11 @@ const apiController = {};
 apiController.getListings = async (req, res, next) => {
   console.log('entered apiController.getListings');
   try {
-    const fetchedListings = await fetch('https://realty-in-us.p.rapidapi.com/properties/v3/detail?property_id=2323606', {
+    const fetchedListings = await fetch('https://realty-in-us.p.rapidapi.com/properties/v3/detail?property_id=4925893489', {
         method: 'GET',
         headers: {
-          'X-RapidAPI-Key': 'TODO',
+          // FIX HARD CODED API KEY, PUT IN ENV
+          'X-RapidAPI-Key': 'ADD KEY',
           'X-RapidAPI-Host': 'realty-in-us.p.rapidapi.com'
         }
       })
