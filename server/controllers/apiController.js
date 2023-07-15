@@ -9,7 +9,7 @@ apiController.getListings = async (req, res, next) => {
         method: 'GET',
         headers: {
           // FIX HARD CODED API KEY, PUT IN ENV
-          'X-RapidAPI-Key': 'ADD KEY',
+          'X-RapidAPI-Key': process.env.API_TOKEN,
           'X-RapidAPI-Host': 'realty-in-us.p.rapidapi.com'
         }
       })

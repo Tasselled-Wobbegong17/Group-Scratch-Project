@@ -1,7 +1,9 @@
 const express = require('express');
+require('dotenv').config({ path: 'api-key.env'});
 const path = require('path');
-// add cookieparser/bcrypt for authentication
 
+// add cookieparser/bcrypt for authentication
+console.log(process.env.API_TOKEN);
 const apiRouter = require(path.resolve(__dirname, 'routers/apiRouters.js'))
 
 const app = express();
