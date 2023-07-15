@@ -1,15 +1,40 @@
 // require database to add/login users
 
+const bcrypt = require('bcrypt');
+const saltRounds = 10;
+
 const userController = {};
 
+function errorCreator (log, status, message) {
+  return {
+    log: log,
+    status: status,
+    message: message
+  }
+}
+
 userController.createUser = async (req, res, next) => {
-  res.locals.user = 'not implemented yet';
-  return next();
+
+  const { username, password } = req.body;
+  if (!username || !password) return next(errorCreator('Error happened in userController.createUser', 400, 'Could not create user. Make sure you have a username and password input'));
+
+  const newUser = {};
+  try {
+    const hash = await bcrypt.hash(password, saltRounds);
+
+    newUser.username = username;
+    newUser.password = hash;
+
+    res.locals.user = newUser;
+    return next();
+  }
+  catch (err) {
+    return next(errorCreator('Error happened in userController.createUser: ' + err, 400, 'Something broke when signing up user'));
+  }
 }
 
 userController.loginUser = async (req, res, next) => {
-  res.locals.user = 'not implemented yet';
-  return next();
+  
 }
 
 module.exports = userController;
