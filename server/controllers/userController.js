@@ -37,9 +37,6 @@ userController.loginUser = async (req, res, next) => {
   const { username, password } = req.body;
   if (!username || !password) return next(errorCreator('Error happened in userController.loginUser', 400, 'Could not login user. Make sure you have a username and password input'));
 
-  
-  
-
   try {
     // get the matching username's hash form DB
     const foundUser = { temp: 'temp', password: "$2b$10$9tg/WUrAVN2yRuR.GVgUWuP.ykJLylrXURtXLehlEGSV9Qw5PtPGq" };
