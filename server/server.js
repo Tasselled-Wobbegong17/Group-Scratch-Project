@@ -4,6 +4,7 @@ const path = require('path');
 
 // add cookieparser/bcrypt for authentication
 const apiRouter = require(path.resolve(__dirname, 'routers/apiRouters.js'))
+const userRouter = require(path.resolve(__dirname, 'routers/userRouters.js'))
 
 const app = express();
 const PORT = 3000;
@@ -26,6 +27,8 @@ else {
 
 //TODO: router stuff
 app.use('/api', apiRouter);
+
+app.use('/user', userRouter);
 
 
 
