@@ -9,6 +9,8 @@ router.get('/listings',
     res.status(200).json(res.locals.listings);
   })
 
+
+
 router.get('/',
   (req, res) => {
     res.status(200).json('f');

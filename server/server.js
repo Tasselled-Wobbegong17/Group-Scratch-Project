@@ -1,5 +1,5 @@
 const express = require('express');
-require('dotenv').config({ path: 'api-key.env'});
+require('dotenv').config({ path: 'api-token.env'});
 const path = require('path');
 
 // add cookieparser/bcrypt for authentication
