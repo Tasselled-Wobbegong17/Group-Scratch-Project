@@ -31,8 +31,13 @@
   },
   "returned_rows": 200,
   "matching_rows": 26170,
+<<<<<<< HEAD
  "listings": [
       { 
+=======
+  "listings": [
+      {
+>>>>>>> b7f31140c72679afe5799125d5deb21c4bfd29bc
           "property_id": "4925893489",
           "is_new_construction": false,
           "listing_id": "2957739799",
