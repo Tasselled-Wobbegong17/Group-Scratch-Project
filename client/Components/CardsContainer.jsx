@@ -4,9 +4,6 @@ import response from '../../a-few-listings.json'
 
 const CardsContainer = () => {
 
-
-    console.log(response.listings);
-
     return (
 
         <div className="card-container">

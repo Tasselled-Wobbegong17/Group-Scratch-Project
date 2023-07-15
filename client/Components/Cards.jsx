@@ -19,8 +19,7 @@ const Cards = ({ listing }) => {
     // var time=new Date('2010-01-13T18:31:16Z').toLocaleString();
 
     const Details = ({ detail }) => { //refactor 
-        console.log(detail);
-        console.log(listing[detail]);
+        
         if (detail === 'list_date') {
             const time = (new Date(`${listing[detail]}`).toLocaleString()).slice(0, 9);
             return (
