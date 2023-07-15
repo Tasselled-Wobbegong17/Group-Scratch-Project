@@ -30,6 +30,8 @@ app.use('/api', apiRouter);
 
 
 
+
+
 //TODO: Serve generic file
 app.get('/', (req, res) => {
   res.status(200).send(path.resolve(__dirname, './client/index.html'));
