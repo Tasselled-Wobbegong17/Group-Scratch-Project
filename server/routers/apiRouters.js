@@ -10,4 +10,10 @@ router.get('/listings',
   })
 
 
+
+router.get('/',
+  (req, res) => {
+    res.status(200).json('f');
+  })
+
 module.exports = router;
