@@ -17,7 +17,7 @@ module.exports = {
       directory: path.join(__dirname, 'build'),
     },
     proxy: {
-      '/': 'http://localhost:3000',
+      '/placholder': 'http://localhost:3000',
     },
     port: 8080, // you can change the port
   },
