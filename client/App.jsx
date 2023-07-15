@@ -4,11 +4,12 @@ import React from 'react';
 // import './stylesheets/styles.css';
 
 const App = () => {
-  return(
+  return (
     <div>
       {/* <MainContainer/> */}
       <p>THE PAGE LOADED</p>
-      adfsfdf
+      <p>testing jeremiah</p>
+      <p>Added in PR</p>
     </div>
   );
 };
