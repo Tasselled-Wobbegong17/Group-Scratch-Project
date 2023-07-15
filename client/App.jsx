@@ -1,14 +1,15 @@
 import React from 'react';
-// import MainContainer from './containers/MainContainer.jsx';
+import CardsContainer from './Components/CardsContainer.jsx'
 
-// import './stylesheets/styles.css';
 
 const App = () => {
+
   return (
-    <div>
-      {/* <MainContainer/> */}
-      <p>THE PAGE LOADED</p>
-      <p>testing jeremiah</p>
+    <div className='outer-container'>
+      <div className='top-header'>
+        <h1>Not Zillow</h1>
+      </div>
+      <CardsContainer />
     </div>
   );
 };
