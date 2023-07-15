@@ -1,5 +1,6 @@
 import React from 'react';
 import CardsContainer from './Components/CardsContainer.jsx'
+import Filter from './Components/Filter.jsx'
 
 
 const App = () => {
@@ -7,8 +8,9 @@ const App = () => {
   return (
     <div className='outer-container'>
       <div className='top-header'>
-        <h1>Not Zillow</h1>
+        <h3>Not Zillow</h3>
       </div>
+      <Filter />
       <CardsContainer />
     </div>
   );

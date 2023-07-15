@@ -1,23 +1,62 @@
 import React from 'react';
 
-const Cards = () => {
 
-  // map over data and pass cards into array
+const Cards = ({ listing }) => {
+    //state management
 
-  const cards = [];
+    // listing = {};
+    const arr = [
+        'address',
+        'price',
+        'sqft',
+        'list_date',
+        'beds',
+        'baths'
+    ]
 
-  data.map(() => {
+    //
 
-    <div className="cards">
-      <CardsContainer cards={...cards} />
-    </div>
-  })
+    // var time=new Date('2010-01-13T18:31:16Z').toLocaleString();
 
+    const Details = ({ detail }) => { //refactor 
+        console.log(detail);
+        console.log(listing[detail]);
+        if (detail === 'list_date') {
+            const time = (new Date(`${listing[detail]}`).toLocaleString()).slice(0, 9);
+            return (
+                <div className='property-details'>
+                    {detail} : {time}
+                </div>
+            )
+        }
+        return (
+            <div className='property-details'>
+                {detail} : {listing[detail]}
+            </div>
+        )
+    }
 
+    //listing.photo
+    //listing.price
+    //price_raw
+    //sqft_raw
+    //listing.beds
+    //listing.baths
+    //listing.sqft
+    //listing.list_date
+    //listing.address
+    //listing.lat
+    //listing.lon
 
     return (
-        <div className="cards-holder">
-        </div>
+        <><img src={listing.photo}></img>
+            <div className='property-info'>
+                {arr.map((el) => {
+                    return (
+                        <Details detail={el} />
+                    )
+                })}
+            </div></>
     )
 }
 
