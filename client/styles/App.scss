@@ -1,0 +1,57 @@
+//imports
+body {
+    // background-color: rgb(185, 159, 126);
+}
+
+h3 {
+    margin: 3px;
+}
+
+.top-header {
+    display: flex;
+    justify-content: center;
+    padding: 1px;
+    width: 30vw;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 3px;
+    font-size: 28px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(16, 193, 16);
+}
+
+.outer-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid black;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    border: 2px solid cyan;
+    height: 80vh;
+    width: 50vw;
+    overflow: scroll;
+}
+
+.cards-holder {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    border: 2px solid black;
+    height: auto;
+    padding: 5px;
+    // height: 100px;
+    margin: 5px;
+    // max-height: 30px;
+    width: 40vw;
+}
+
+.property-details {
+    margin: 3px;
+}

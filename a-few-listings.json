@@ -1,0 +1,490 @@
+{"listings": [
+    {
+        "property_id": "4925893489",
+        "is_new_construction": false,
+        "listing_id": "2957739799",
+        "prop_type": "single_family",
+        "last_update": "2023-07-15T14:02:10Z",
+        "rdc_web_url": "https://www.realtor.com/realestateandhomes-detail/56-Fane-Ct_Brooklyn_NY_11229_M49258-93489",
+        "is_turbo": false,
+        "address": "56 Fane Ct in Gerritsen Beach, Brooklyn, 11229",
+        "address_new": {
+            "city": "Brooklyn",
+            "line": "56 Fane Ct",
+            "postal_code": "11229",
+            "state_code": "NY",
+            "state": "New York",
+            "county": "Kings",
+            "fips_code": "36047",
+            "county_needed_for_uniq": false,
+            "lat": 40.592974,
+            "lon": -73.929072,
+            "neighborhood_name": "Gerritsen Beach",
+            "neighborhoods": [
+                {
+                    "name": "Gerritsen Beach",
+                    "city": "Brooklyn",
+                    "state_code": "NY",
+                    "level": "neighborhood",
+                    "id": "84719"
+                },
+                {
+                    "name": "Southern Brooklyn",
+                    "city": "New York",
+                    "state_code": "NY",
+                    "level": "macro_neighborhood",
+                    "id": null
+                }
+            ]
+        },
+        "prop_status": "for_sale",
+        "price_raw": 599000,
+        "sqft_raw": 1345,
+        "list_date": "2023-07-15T18:04:58Z",
+        "advertiser_id": 852557,
+        "office_name": "Pride Estates",
+        "products": [
+            "core.agent",
+            "co_broke"
+        ],
+        "is_showcase": false,
+        "price": "$599,000",
+        "beds": 3,
+        "baths": 2,
+        "sqft": "1,345 sq ft",
+        "lot_size": "1,785 sq ft lot",
+        "mls": {
+            "name": "Brooklyn",
+            "id": "475431",
+            "plan_id": null,
+            "abbreviation": "BONY",
+            "type": "mls"
+        },
+        "data_source_name": "mls",
+        "photo": "https://ap.rdcpix.com/fb8090b236d02c349876de6bba040e6dl-m2981858780x.jpg",
+        "is_cobroker": true,
+        "short_price": "$599K",
+        "baths_full": 2,
+        "photo_count": 38,
+        "lat": 40.592974,
+        "lon": -73.929072,
+        "is_new_listing": true,
+        "has_leadform": true,
+        "page_no": 1,
+        "rank": 1,
+        "list_tracking": "type|property|data|prop_id|4925893489|list_id|2957739799|page|rank|list_branding|listing_agent|listing_office|data_source|mls|advertiser_id|agent|property_status|product_code|advantage_code^1|1|0|1|I9U5|35T|G|1^^$0|1|2|$3|4|5|6|7|J|8|K|9|$A|L|B|M]|C|D|E|$F|N]|G|O|H|P|I|Q]]",
+        "suppression_flags": [
+            "suppress_foreclosure"
+        ],
+        "lead_forms": [
+            {
+                "type": "classic",
+                "lead_type": "co_broke",
+                "form": {
+                    "name": {
+                        "required": true,
+                        "minimum_character_count": 1
+                    },
+                    "email": {
+                        "required": true,
+                        "minimum_character_count": 5
+                    },
+                    "phone": {
+                        "required": true,
+                        "minimum_character_count": 10,
+                        "maximum_character_count": 11
+                    },
+                    "message": {
+                        "required": false,
+                        "minimum_character_count": 0
+                    },
+                    "agents": [
+                        {
+                            "advertiser_id": 852557,
+                            "has_ratings": false,
+                            "is_listing_agent": true
+                        }
+                    ],
+                    "show": true
+                },
+                "is_lcm_enabled": false,
+                "show_text_leads": true,
+                "cashback_enabled": false,
+                "smarthome_enabled": false,
+                "flip_the_market_enabled": false
+            }
+        ]
+    },
+    {
+        "property_id": "9747203680",
+        "is_new_construction": false,
+        "listing_id": "2957739487",
+        "prop_type": "condo",
+        "last_update": "2023-07-15T13:31:14Z",
+        "rdc_web_url": "https://www.realtor.com/realestateandhomes-detail/330-3rd-Ave-Apt-9G_New-York_NY_10010_M97472-03680",
+        "prop_sub_type": "coop",
+        "is_turbo": false,
+        "address": "330 Third Ave Unit 9G in Rose Hill, Manhattan, 10010",
+        "address_new": {
+            "city": "Manhattan",
+            "line": "330 Third Ave Unit 9G",
+            "postal_code": "10010",
+            "state_code": "NY",
+            "state": "New York",
+            "county": "New York",
+            "fips_code": "36061",
+            "county_needed_for_uniq": false,
+            "lat": 40.739799,
+            "lon": -73.982666,
+            "neighborhood_name": "Rose Hill",
+            "neighborhoods": [
+                {
+                    "name": "Rose Hill",
+                    "city": "Manhattan",
+                    "state_code": "NY",
+                    "level": "sub_neighborhood",
+                    "id": null
+                },
+                {
+                    "name": "Midtown Manhattan",
+                    "city": "New York",
+                    "state_code": "NY",
+                    "level": "macro_neighborhood",
+                    "id": null
+                },
+                {
+                    "name": "Kips Bay",
+                    "city": "Manhattan",
+                    "state_code": "NY",
+                    "level": "neighborhood",
+                    "id": "77"
+                }
+            ]
+        },
+        "prop_status": "for_sale",
+        "price_raw": 900000,
+        "sqft_raw": 920,
+        "list_date": "2023-07-15T17:40:47Z",
+        "advertiser_id": 2250856,
+        "office_name": "Brown Harris Stevens ",
+        "office_advertiser_id": 2249806,
+        "broker_advertiser_id": 2033003,
+        "products": [
+            "core.agent",
+            "core.broker",
+            "co_broke"
+        ],
+        "is_showcase": false,
+        "price": "$900,000",
+        "beds": 1,
+        "baths": 1,
+        "sqft": "920 sq ft",
+        "lot_size": "0.30 acres",
+        "mls": {
+            "name": "TerraHoldings",
+            "id": "8592328",
+            "plan_id": null,
+            "abbreviation": "TENY",
+            "type": "mls"
+        },
+        "data_source_name": "mls",
+        "photo": "https://ap.rdcpix.com/f2f0405844532880425ff71bd8cbf81cl-m2308801557x.jpg",
+        "is_cobroker": true,
+        "short_price": "$900K",
+        "baths_full": 1,
+        "photo_count": 12,
+        "lat": 40.739799,
+        "lon": -73.982666,
+        "is_new_listing": true,
+        "has_leadform": true,
+        "page_no": 1,
+        "rank": 2,
+        "list_tracking": "type|property|data|prop_id|9747203680|list_id|2957739487|page|rank|list_branding|listing_agent|listing_office|data_source|mls|advertiser_id|agent|office|broker|property_status|product_code|advantage_code^1|2|0|1|1C8RS|1C7YM|17KOB|35T|G|5^^$0|1|2|$3|4|5|6|7|L|8|M|9|$A|N|B|O]|C|D|E|$F|P|G|Q|H|R]|I|S|J|T|K|U]]",
+        "lead_forms": [
+            {
+                "type": "classic",
+                "lead_type": "co_broke",
+                "form": {
+                    "name": {
+                        "required": true,
+                        "minimum_character_count": 1
+                    },
+                    "email": {
+                        "required": true,
+                        "minimum_character_count": 5
+                    },
+                    "phone": {
+                        "required": true,
+                        "minimum_character_count": 10,
+                        "maximum_character_count": 11
+                    },
+                    "message": {
+                        "required": false,
+                        "minimum_character_count": 0
+                    },
+                    "agents": [
+                        {
+                            "advertiser_id": 2250856,
+                            "has_ratings": false,
+                            "is_listing_agent": true
+                        }
+                    ],
+                    "show": true
+                },
+                "is_lcm_enabled": false,
+                "show_text_leads": true,
+                "cashback_enabled": false,
+                "smarthome_enabled": false,
+                "flip_the_market_enabled": false
+            }
+        ]
+    },
+    {
+        "property_id": "4680776432",
+        "is_new_construction": false,
+        "listing_id": "2952623525",
+        "prop_type": "multi_family",
+        "last_update": "2023-07-15T17:37:46Z",
+        "rdc_web_url": "https://www.realtor.com/realestateandhomes-detail/8719-75th-St_Woodhaven_NY_11421_M46807-76432",
+        "is_turbo": false,
+        "address": "87-19 75th St in Southwestern Queens, Woodhaven, 11421",
+        "address_new": {
+            "city": "Woodhaven",
+            "line": "87-19 75th St",
+            "postal_code": "11421",
+            "state_code": "NY",
+            "state": "New York",
+            "county": "Queens",
+            "fips_code": "36081",
+            "county_needed_for_uniq": false,
+            "lat": 40.690117,
+            "lon": -73.8659,
+            "neighborhood_name": "Southwestern Queens",
+            "neighborhoods": [
+                {
+                    "name": "Southwestern Queens",
+                    "city": "New York",
+                    "state_code": "NY",
+                    "level": "macro_neighborhood",
+                    "id": null
+                },
+                {
+                    "name": "Woodhaven",
+                    "city": "New York",
+                    "state_code": "NY",
+                    "level": "neighborhood",
+                    "id": "613"
+                }
+            ]
+        },
+        "prop_status": "for_sale",
+        "price_raw": 890000,
+        "sqft_raw": 2168,
+        "list_date": "2023-07-15T17:37:46Z",
+        "advertiser_id": 3972956,
+        "office_name": "E Realty International Corp",
+        "office_advertiser_id": 2865230,
+        "broker_advertiser_id": 3904886,
+        "products": [
+            "core.agent",
+            "core.broker",
+            "co_broke"
+        ],
+        "is_showcase": false,
+        "price": "$890,000",
+        "beds": 7,
+        "baths": 4,
+        "sqft": "2,168 sq ft",
+        "lot_size": "2,886 sq ft lot",
+        "mls": {
+            "name": "OneKeyMLS",
+            "id": "3459943",
+            "plan_id": null,
+            "abbreviation": "LINY",
+            "type": "mls"
+        },
+        "data_source_name": "mls",
+        "photo": "https://ap.rdcpix.com/ad8f2720b1e662ad0fb9ebddcc0f33a0l-m2723868017x.jpg",
+        "is_cobroker": true,
+        "short_price": "$890K",
+        "baths_full": 4,
+        "photo_count": 36,
+        "lat": 40.690117,
+        "lon": -73.8659,
+        "is_new_listing": true,
+        "has_leadform": true,
+        "page_no": 1,
+        "rank": 3,
+        "list_tracking": "type|property|data|prop_id|4680776432|list_id|2952623525|page|rank|list_branding|listing_agent|listing_office|data_source|mls|advertiser_id|agent|office|broker|property_status|product_code|advantage_code^1|3|0|1|2D5JW|1PETQ|2BP12|35T|G|5^^$0|1|2|$3|4|5|6|7|L|8|M|9|$A|N|B|O]|C|D|E|$F|P|G|Q|H|R]|I|S|J|T|K|U]]",
+        "suppression_flags": [
+            "suppress_foreclosure",
+            "suppress_all_offmarket_photos_except_one"
+        ],
+        "lead_forms": [
+            {
+                "type": "classic",
+                "lead_type": "co_broke",
+                "form": {
+                    "name": {
+                        "required": true,
+                        "minimum_character_count": 1
+                    },
+                    "email": {
+                        "required": true,
+                        "minimum_character_count": 5
+                    },
+                    "phone": {
+                        "required": true,
+                        "minimum_character_count": 10,
+                        "maximum_character_count": 11
+                    },
+                    "message": {
+                        "required": false,
+                        "minimum_character_count": 0
+                    },
+                    "agents": [
+                        {
+                            "advertiser_id": 3972956,
+                            "has_ratings": false,
+                            "is_listing_agent": true
+                        }
+                    ],
+                    "show": true
+                },
+                "is_lcm_enabled": false,
+                "show_text_leads": true,
+                "cashback_enabled": false,
+                "smarthome_enabled": false,
+                "flip_the_market_enabled": true,
+                "local_phone": "(888)652-0969",
+                "local_phones": {
+                    "comm_console_mweb": "(888)652-0969"
+                }
+            }
+        ]
+    },
+    {
+        "property_id": "3993858083",
+        "is_new_construction": false,
+        "listing_id": "2957739347",
+        "prop_type": "condo",
+        "last_update": "2023-07-15T17:31:39Z",
+        "rdc_web_url": "https://www.realtor.com/realestateandhomes-detail/3444-82nd-St-Apt-1C_Jackson-Heights_NY_11372_M39938-58083",
+        "prop_sub_type": "condos",
+        "is_turbo": false,
+        "address": "34-44 82nd St Unit 1C in Jackson Heights, Jackson Heights, 11372",
+        "address_new": {
+            "city": "Jackson Heights",
+            "line": "34-44 82nd St Unit 1C",
+            "postal_code": "11372",
+            "state_code": "NY",
+            "state": "New York",
+            "county": "Queens",
+            "fips_code": "36081",
+            "county_needed_for_uniq": false,
+            "lat": 40.752389,
+            "lon": -73.885083,
+            "neighborhood_name": "Jackson Heights",
+            "neighborhoods": [
+                {
+                    "name": "Jackson Heights",
+                    "city": "New York",
+                    "state_code": "NY",
+                    "level": "neighborhood",
+                    "id": null
+                },
+                {
+                    "name": "Northwestern Queens",
+                    "city": "New York",
+                    "state_code": "NY",
+                    "level": "macro_neighborhood",
+                    "id": "6"
+                }
+            ]
+        },
+        "prop_status": "for_sale",
+        "price_raw": 849000,
+        "sqft_raw": 1250,
+        "list_date": "2023-07-15T17:31:39Z",
+        "advertiser_id": 1451394,
+        "office_name": "RE/MAX Team",
+        "broker_advertiser_id": 4457768,
+        "products": [
+            "core.agent",
+            "co_broke"
+        ],
+        "is_showcase": false,
+        "price": "$849,000",
+        "beds": 2,
+        "baths": 2,
+        "sqft": "1,250 sq ft",
+        "lot_size": "0.37 acres",
+        "mls": {
+            "name": "OneKeyMLS",
+            "id": "3491469",
+            "plan_id": null,
+            "abbreviation": "LINY",
+            "type": "mls"
+        },
+        "data_source_name": "mls",
+        "photo": "https://ap.rdcpix.com/e89705d1b780756910ec994e7a1ce6b6l-m2446798707x.jpg",
+        "is_cobroker": true,
+        "short_price": "$849K",
+        "baths_full": 2,
+        "photo_count": 25,
+        "lat": 40.752389,
+        "lon": -73.885083,
+        "is_new_listing": true,
+        "has_leadform": true,
+        "page_no": 1,
+        "rank": 4,
+        "list_tracking": "type|property|data|prop_id|3993858083|list_id|2957739347|page|rank|list_branding|listing_agent|listing_office|data_source|mls|advertiser_id|agent|broker|property_status|product_code|advantage_code^1|4|0|1|V3WI|2NJMW|35T|G|1^^$0|1|2|$3|4|5|6|7|K|8|L|9|$A|M|B|N]|C|D|E|$F|O|G|P]|H|Q|I|R|J|S]]",
+        "suppression_flags": [
+            "suppress_foreclosure",
+            "suppress_all_offmarket_photos_except_one"
+        ],
+        "lead_forms": [
+            {
+                "type": "classic",
+                "lead_type": "co_broke",
+                "form": {
+                    "name": {
+                        "required": true,
+                        "minimum_character_count": 1
+                    },
+                    "email": {
+                        "required": true,
+                        "minimum_character_count": 5
+                    },
+                    "phone": {
+                        "required": true,
+                        "minimum_character_count": 10,
+                        "maximum_character_count": 11
+                    },
+                    "message": {
+                        "required": false,
+                        "minimum_character_count": 0
+                    },
+                    "agents": [
+                        {
+                            "advertiser_id": 1451394,
+                            "has_ratings": false,
+                            "is_listing_agent": true
+                        }
+                    ],
+                    "show": true
+                },
+                "is_lcm_enabled": false,
+                "show_text_leads": true,
+                "cashback_enabled": false,
+                "smarthome_enabled": false,
+                "flip_the_market_enabled": true,
+                "local_phone": "(888)652-0969",
+                "local_phones": {
+                    "comm_console_mweb": "(888)652-0969"
+                }
+            }
+        ]
+    }
+]
+}
