@@ -12,16 +12,17 @@ const App = () => {
     return showFilters ? setShowFilters(false) : setShowFilters(true); 
   }
 
-  function fetchListings(params) {
+  function fetchListings(queries) {
     let url = '/api/listings?';
-    Object.entries(params).forEach((pair, i, arr) => {
+    Object.entries(queries).forEach((pair, i, arr) => {
       url += `${pair[0]}=${pair[1]}`;
       if (i != arr.length - 1) url += '&';
     })
-    
+    console.log(url);
     fetch(url)
       .then(response => {
         console.log('parsing response');
+        console.log(response);
         return response.json()
       })
       .then(data => {
@@ -37,7 +38,8 @@ const App = () => {
       <div className='top-header'>
         <h3>Not Zillow</h3>
       </div>
-      <Filter fetchListings={fetchListings} />
+      <Filter fetchListings={fetchListings}
+              showFilters={showFilters} />
       <CardsContainer listings={listings} />
     </div>
   );
