@@ -48,7 +48,7 @@ const Cards = ({ listing }) => {
     //listing.lon
 
     return (
-        <><img src={listing.photo}></img>
+        <><img src={listing.photo} alt="Could not load image"></img>
             <div className='property-info'>
                 {arr.map((el) => {
                     return (
