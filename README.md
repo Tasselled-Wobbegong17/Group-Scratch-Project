@@ -36,7 +36,7 @@ We are using the 'Realty in US' api on RapidAPI to get real estate listings.
 -User ability to drag and drop favorites
 -GeoJSON mapping that allows user to set search area
 
-![postgreSQL database visualization](/assets/PostgreSQL DB Visualized2.png)
+![postgreSQL database visualization](../assets/PostgreSQL_DB_Visualized2.png)
 
 ## Help
 
