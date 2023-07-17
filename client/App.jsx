@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 import CardsContainer from './Components/CardsContainer.jsx'
 import Filter from './Components/Filter.jsx'
+import response from '../a-few-listings.json'
 
 
 const App = () => {
 
-  const [listings, setListings] = useState({ listings: []});
+  const [listings, setListings] = useState(response.listings);
   const [showFilters, setShowFilters] = useState(false);
 
   const showModal = () => {
@@ -33,11 +34,11 @@ const App = () => {
 
   return (
     <div className='outer-container'>
-      <button onClick={() => fetchListings({ state_code: 'NY', city: 'New York City', offset: 0, limit: 10 })}>Get listings</button>
-      <button onClick={showModal}>Click to Show Filters</button>
+      
       <div className='top-header'>
         <h3>Not Zillow</h3>
       </div>
+      <button onClick={showModal} id="filterButton" >{showFilters ? 'Click to Hide Filters' : 'Click to Show Filters'}</button>
       <Filter fetchListings={fetchListings}
               showFilters={showFilters} />
       <CardsContainer listings={listings} />

@@ -19,11 +19,16 @@ const Filter = ({ showFilters, fetchListings }) => {
       };
 
       for (let i = 0; i < arr.length; i++) {
-        console.log(arr[i].value);
         const textInput = document.getElementById(arr[i].value);
 
         if (textInput) {
-          fetchQueries[arr[i].value] = textInput.value;
+          if (textInput.value === '') {
+            alert('All checked fields must be filled')
+            return;
+          }
+          else {
+            fetchQueries[arr[i].value] = textInput.value;
+          }
         }
         else {
           fetchQueries[arr[i].value] = true;
@@ -38,19 +43,19 @@ const Filter = ({ showFilters, fetchListings }) => {
     return (
 
         <div className="filter-bar">
-                <label>Filter by State</label>
-                <input type="checkbox" name="filterBy" value="state_code"></input>
-                <input type="text" name="filterBy" id="state_code"></input><br></br>
+            <label>Filter by State</label>
+            <input type="checkbox" name="filterBy" value="state_code"></input>
+            <input type="text" name="filterBy" id="state_code"></input><br></br>
 
-                <label>Filter by City</label>
-                <input type="checkbox" name="filterBy" value="city"></input>
-                <input type="text" name="filterBy" id="city"></input><br></br>
+            <label>Filter by City</label>
+            <input type="checkbox" name="filterBy" value="city"></input>
+            <input type="text" name="filterBy" id="city"></input><br></br>
 
-                <label>Filter by Area Code</label>
-                <input type="checkbox" name="filterBy" value="postal_code"></input>
-                <input type="text" name="filterBy" id="postal_code"></input><br></br>
-              
-                <button onClick={handleClick}className="filterSubmitButton">Submit</button><br></br>
+            <label>Filter by Area Code</label>
+            <input type="checkbox" name="filterBy" value="postal_code"></input>
+            <input type="text" name="filterBy" id="postal_code"></input><br></br>
+          
+            <button onClick={handleClick}className="filterSubmitButton">Submit</button><br></br>
         </div>
     )
  }
