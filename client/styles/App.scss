@@ -12,7 +12,7 @@ h3 {
     justify-content: center;
     padding: 1px;
     width: 30%;
-    border: 2px solid black;
+    // border: 2px solid black;
     border-radius: 10px;
     margin: 3px;
     font-size: 28px;
@@ -20,18 +20,30 @@ h3 {
     color: rgb(16, 193, 16);
 }
 
-.userLogin {
+.user-login {
     display: flex;
     flex-wrap: wrap;
-    border: 2px solid black;
+    border: none;
     padding: 5px;
+    margin: 5px;
     width: 20%;
     height: auto;
     font-size: 16px;
 }
 
+.new-account {
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 input {
-    margin: 2px;
+    margin: 4px;
+}
+
+button {
+    margin: 4px;
 }
 
 .outer-container {
