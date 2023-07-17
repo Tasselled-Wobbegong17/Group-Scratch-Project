@@ -1,7 +1,7 @@
 import React from 'react';
 import CardsContainer from './Components/CardsContainer.jsx'
 import Filter from './Components/Filter.jsx'
-
+import LogIn from './Components/LogIn.jsx'
 
 const App = () => {
 
@@ -10,7 +10,7 @@ const App = () => {
       <div className='top-header'>
         <h3>Not Zillow</h3>
       </div>
-      <Filter />
+      <LogIn/>
       <CardsContainer />
     </div>
   );

@@ -11,13 +11,27 @@ h3 {
     display: flex;
     justify-content: center;
     padding: 1px;
-    width: 30vw;
+    width: 30%;
     border: 2px solid black;
     border-radius: 10px;
     margin: 3px;
     font-size: 28px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: rgb(16, 193, 16);
+}
+
+.userLogin {
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid black;
+    padding: 5px;
+    width: 20%;
+    height: auto;
+    font-size: 16px;
+}
+
+input {
+    margin: 2px;
 }
 
 .outer-container {

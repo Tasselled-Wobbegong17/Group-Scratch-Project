@@ -1,5 +1,5 @@
 const express = require('express');
-require('dotenv').config({ path: 'api-token.env'});
+require('dotenv').config({ path: 'api-token.env' });
 const path = require('path');
 
 // add cookieparser/bcrypt for authentication
@@ -36,6 +36,10 @@ app.use('/user', userRouter);
 //TODO: Serve generic file
 app.get('/', (req, res) => {
   res.status(200).send(path.resolve(__dirname, './client/index.html'));
+});
+
+app.use('/login', (req, res) => {
+  res.status(200).json(req.body);
 });
 
 //TODO: Double check 404 handler
