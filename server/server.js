@@ -38,10 +38,6 @@ app.get('/', (req, res) => {
   res.status(200).send(path.resolve(__dirname, './client/index.html'));
 });
 
-app.use('/login', (req, res) => {
-  res.status(200).json(req.body);
-});
-
 //TODO: Double check 404 handler
 app.use('*', (req, res) => res.status(404).send('Nothings exists here :O'));
 

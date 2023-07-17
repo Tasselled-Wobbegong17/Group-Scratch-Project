@@ -1,10 +1,10 @@
 import React from 'react';
 import { useState } from 'react';
 
-const db = {
-    username: 'honeymustard',
-    password: 'test'
-}
+// const db = {
+//     username: 'honeymustard',
+//     password: 'test'
+// }
 
 const LogIn = () => {
 
@@ -15,20 +15,76 @@ const LogIn = () => {
 
     const handleSubmit = (e, type) => {
         e.preventDefault();
-        const { username, password } = document.forms[0];
         switch (type) {
             case 'create': {
+                const { username, password } = document.forms[1];
+                fetch('/user/signup',
+                    {
+                        method: 'POST',
+                        headers: { 'content-type': 'application/json' },
+                        body: JSON.stringify({
+                            username: username.value,
+                            password: password.value
+                        })
+                    }
+                )
+                    .then((response) => {
+                        if (response.status === 200) {
+                            return response.json()
+                        }
+                        else {
+                            return null;
+                        }
+                    })
+                    .then((data) => {
+                        if (data === null) {
+                            setLogInSuccess(false)
+                        }
+                        else {
+                            setLogInSuccess(true);
+                            setName(username.value);
+                        }
+                        console.log(data);
+                    })
+                    .catch((err) => {
+                        console.log(err);
+                    })
                 break;
             }
             case 'login': {
+                const { username, password } = document.forms[0];
                 setLogInAttempt(true);
-                if (db.username === username.value && db.password === password.value) {
-                    setLogInSuccess(true);
-                    setName(username.value)
-                }
-                else {
-                    setLogInSuccess(false);
-                }
+                fetch('/user/login',
+                    {
+                        method: 'POST',
+                        headers: { 'content-type': 'application/json' },
+                        body: JSON.stringify({
+                            username: username.value,
+                            password: password.value
+                        })
+                    }
+                )
+                    .then((response) => {
+                        if (response.status === 200) {
+                            return response.json()
+                        }
+                        else {
+                            return null;
+                        }
+                    })
+                    .then((data) => {
+                        if (data === null) {
+                            setLogInSuccess(false)
+                        }
+                        else {
+                            setLogInSuccess(true);
+                            setName(username.value)
+                        }
+                        console.log(data);
+                    })
+                    .catch((err) => {
+                        console.log(err);
+                    })
                 break;
             }
             default:

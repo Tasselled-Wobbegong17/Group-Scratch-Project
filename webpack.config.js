@@ -17,7 +17,7 @@ module.exports = {
       directory: path.join(__dirname, 'build'),
     },
     proxy: {
-      '/login': 'http://localhost:3000',
+      '/': 'http://localhost:3000',
     },
     port: 8080, // you can change the port
   },
@@ -30,8 +30,8 @@ module.exports = {
           loader: "babel-loader",
           options: {
             presets: [
-              ['@babel/preset-env', {targets: "defaults"}],
-              ['@babel/preset-react', {targets: "defaults"}],
+              ['@babel/preset-env', { targets: "defaults" }],
+              ['@babel/preset-react', { targets: "defaults" }],
             ]
           }
         },
