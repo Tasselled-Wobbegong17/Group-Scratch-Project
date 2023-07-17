@@ -1,5 +1,5 @@
 // require database to add/login users
-
+const sql = require('../db.js')
 const bcrypt = require('bcrypt');
 const saltRounds = 10;
 
@@ -25,6 +25,11 @@ userController.createUser = async (req, res, next) => {
     newUser.username = username;
     newUser.password = hash;
 
+    await sql`
+      INSERT INTO users (username, password)
+      VALUES (${newUser.username}, ${newUser.password});
+    `;
+
     res.locals.user = newUser;
     console.log(newUser);
     return next();
@@ -40,11 +45,21 @@ userController.loginUser = async (req, res, next) => {
 
   try {
     // get the matching username's hash form DB
-    const foundUser = { temp: 'temp', password: "$2b$10$9tg/WUrAVN2yRuR.GVgUWuP.ykJLylrXURtXLehlEGSV9Qw5PtPGq" };
+    const findUserQuery = await sql`
+      SELECT *
+      FROM users
+      WHERE username = ${username};
+    `;
+    const foundUser = {
+      username: findUserQuery[0].username,
+      password: findUserQuery[0].password
+    };
 
-    const result = await bcrypt.compare(password, foundUser.password)
+    console.log(foundUser)
 
-    if (result) {
+    const match = await bcrypt.compare(password, foundUser.password)
+
+    if (match) {
       res.locals.user = foundUser;
       return next();
     }

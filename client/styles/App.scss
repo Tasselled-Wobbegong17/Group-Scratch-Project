@@ -81,3 +81,29 @@ button {
 .property-details {
     margin: 3px;
 }
+
+.filter-bar {
+    display: grid;
+    grid-template-columns: 150px 20px 150px;
+}
+
+.filter-label {
+  grid-column-start: 1;
+}
+
+.filter-checkbox {
+  grid-column-start: 2;
+}
+
+.filter-text-field {
+  grid-column-start: 3;
+}
+
+.filterSubmitButton {
+  grid-column-start: 3;
+  margin-top: 10px;
+}
+
+.filter-button {
+    margin: 10px;
+}
