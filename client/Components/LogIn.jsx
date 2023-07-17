@@ -95,7 +95,7 @@ const LogIn = () => {
 
     const Success = (
         <div>
-            <p>Welcome back {name}</p>
+            <p>Welcome back {name}!</p>
         </div>
     )
     const Failure = (
@@ -115,7 +115,7 @@ const LogIn = () => {
             <form onSubmit={(e) => handleSubmit(e, 'login')}>
                 <input name="username" type="text" placeholder="username"></input>
                 <input name="password" type="password" placeholder="password"></input>
-                <input type='submit' value="login"></input>
+                <input type='submit' value="Login" className="submit-button"></input>
             </form>
             <div>{newAcc ? <div></div> : <button onClick={() => { setNewAcc(true); setLogInAttempt(false); }}>Create New Account</button>}</div>
         </div>

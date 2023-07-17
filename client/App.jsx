@@ -34,7 +34,7 @@ const App = () => {
   return (
     <div className="outer-container">
       <div className="top-header">
-        <h3>Not Zillow</h3>
+        <h3>Real Estate Bonanza</h3>
       </div>
       <LogIn />
       <button onClick={showModal} id="filter-button">

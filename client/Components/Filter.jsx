@@ -15,7 +15,7 @@ const Filter = ({ showFilters, fetchListings }) => {
         state_code: 'NY',
         city: 'New York City',
         offset: 0,
-        limit: 50,
+        limit: 20,
       };
 
       for (let i = 0; i < arr.length; i++) {

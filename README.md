@@ -12,7 +12,7 @@ We are using the 'Realty in US' api on RapidAPI to get real estate listings.
 
 ### Dependencies
 
-  Use 'npm install' to add all dependencies
+  Use ```npm install``` to add all dependencies
 
 ### Installing
 
