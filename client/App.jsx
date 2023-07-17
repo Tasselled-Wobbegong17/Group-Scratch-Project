@@ -1,8 +1,12 @@
 import React, { useState } from 'react';
 import CardsContainer from './Components/CardsContainer.jsx'
 import Filter from './Components/Filter.jsx'
+<<<<<<< HEAD
+import LogIn from './Components/LogIn.jsx'
+=======
 import response from '../a-few-listings.json'
 
+>>>>>>> dev
 
 const App = () => {
 
@@ -38,10 +42,15 @@ const App = () => {
       <div className='top-header'>
         <h3>Not Zillow</h3>
       </div>
+<<<<<<< HEAD
+      <LogIn/>
+      <CardsContainer />
+=======
       <button onClick={showModal} id="filter-button" >{showFilters ? 'Click to Hide Filters' : 'Click to Show Filters'}</button>
       <Filter fetchListings={fetchListings}
               showFilters={showFilters} />
       <CardsContainer listings={listings} />
+>>>>>>> dev
     </div>
   );
 };

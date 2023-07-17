@@ -5,7 +5,7 @@ const saltRounds = 10;
 
 const userController = {};
 
-function errorCreator (log, status, message) {
+function errorCreator(log, status, message) {
   return {
     log: log,
     status: status,
@@ -31,6 +31,7 @@ userController.createUser = async (req, res, next) => {
     `;
 
     res.locals.user = newUser;
+    console.log(newUser);
     return next();
   }
   catch (err) {

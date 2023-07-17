@@ -1,4 +1,6 @@
 import React from 'react';
+import { v4 as uuidv4 } from 'uuid';
+
 
 
 const Cards = ({ listing }) => {
@@ -14,22 +16,18 @@ const Cards = ({ listing }) => {
         'baths'
     ]
 
-    //
+    const Details = ({ detail }) => {
 
-    // var time=new Date('2010-01-13T18:31:16Z').toLocaleString();
-
-    const Details = ({ detail }) => { //refactor 
-        
         if (detail === 'list_date') {
             const time = (new Date(`${listing[detail]}`).toLocaleString()).slice(0, 9);
             return (
-                <div className='property-details'>
+                <div className='property-details' key={uuidv4()}>
                     {detail} : {time}
                 </div>
             )
         }
         return (
-            <div className='property-details'>
+            <div className='property-details' key={uuidv4()}>
                 {detail} : {listing[detail]}
             </div>
         )
@@ -48,8 +46,13 @@ const Cards = ({ listing }) => {
     //listing.lon
 
     return (
+<<<<<<< HEAD
+        <><img src={listing.photo} key={uuidv4()}></img>
+            <div className='property-info' key={uuidv4()}>
+=======
         <><img src={listing.photo} alt="Could not load image"></img>
             <div className='property-info'>
+>>>>>>> dev
                 {arr.map((el) => {
                     return (
                         <Details detail={el} />
