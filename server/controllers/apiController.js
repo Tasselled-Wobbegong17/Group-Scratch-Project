@@ -18,7 +18,6 @@ apiController.getListings = async (req, res, next) => {
   });
   
   try {
-    console.log(url);
     const fetchedListings = await fetch(url, {
         method: 'GET',
         headers: {
@@ -26,10 +25,8 @@ apiController.getListings = async (req, res, next) => {
           'X-RapidAPI-Host': 'realty-in-us.p.rapidapi.com'
         }
       })
-    console.log('parsing fetch json');
     const parsedListings = await fetchedListings.json();
     res.locals.listings = parsedListings;
-    console.log('completed fetch, returning response: ', parsedListings)
     return next();
   }
   catch (err) {

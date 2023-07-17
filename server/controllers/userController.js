@@ -60,7 +60,7 @@ userController.loginUser = async (req, res, next) => {
     const match = await bcrypt.compare(password, foundUser.password)
 
     if (match) {
-      res.locals.user = foundUser;
+      res.locals.user = foundUser.username;
       return next();
     }
     else {

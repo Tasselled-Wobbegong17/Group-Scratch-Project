@@ -15,7 +15,7 @@ const Filter = ({ showFilters, fetchListings }) => {
         state_code: 'NY',
         city: 'New York City',
         offset: 0,
-        limit: 5,
+        limit: 50,
       };
 
       for (let i = 0; i < arr.length; i++) {
@@ -43,13 +43,13 @@ const Filter = ({ showFilters, fetchListings }) => {
     return (
 
         <div className="filter-bar">
-            <label className="filter-label">Filter by State</label>
+            <label className="filter-label">Filter by State (TX)</label>
             <input type="checkbox" name="filterBy" value="state_code" className="filter-checkbox"></input>
-            <input type="text" name="filterBy" id="state_code" className="filter-text-field"></input><br></br>
+            <input type="text" name="filterBy" id="state_code" className="filter-text-field" placeholder="requried"></input><br></br>
 
             <label className="filter-label">Filter by City</label>
             <input type="checkbox" name="filterBy" value="city" className="filter-checkbox"></input>
-            <input type="text" name="filterBy" id="city" className="filter-text-field"></input><br></br>
+            <input type="text" name="filterBy" id="city" className="filter-text-field" placeholder="requried"></input><br></br>
 
             <label className="filter-label">Limit Results</label>
             <input type="checkbox" name="filterBy" value="limit" className="filter-checkbox"></input>
@@ -71,9 +71,6 @@ const Filter = ({ showFilters, fetchListings }) => {
             <input type="checkbox" name="filterBy" value="beds_min" className="filter-checkbox"></input>
             <input type="text" name="filterBy" id="beds_min" className="filter-text-field"></input><br></br>
 
-            <label className="filter-label">Reduced Price</label>
-            <input type="checkbox" name="filterBy" value="reduced" className="filter-checkbox"></input><br></br>
-
             <label className="filter-label">Minimum Price</label>
             <input type="checkbox" name="filterBy" value="price_min" className="filter-checkbox"></input>
             <input type="text" name="filterBy" id="price_min" className="filter-text-field"></input><br></br>
@@ -81,6 +78,9 @@ const Filter = ({ showFilters, fetchListings }) => {
             <label className="filter-label">Maximum Price</label>
             <input type="checkbox" name="filterBy" value="price_max" className="filter-checkbox"></input>
             <input type="text" name="filterBy" id="price_max" className="filter-text-field"></input><br></br>
+
+            <label className="filter-label">Reduced Price</label>
+            <input type="checkbox" name="filterBy" value="reduced" className="filter-checkbox"></input><br></br>
           
             <button onClick={handleClick}className="filterSubmitButton">Submit</button><br></br>
         </div>
