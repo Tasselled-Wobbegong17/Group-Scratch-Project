@@ -46,13 +46,8 @@ const Cards = ({ listing }) => {
     //listing.lon
 
     return (
-<<<<<<< HEAD
-        <><img src={listing.photo} key={uuidv4()}></img>
-            <div className='property-info' key={uuidv4()}>
-=======
         <><img src={listing.photo} alt="Could not load image"></img>
             <div className='property-info'>
->>>>>>> dev
                 {arr.map((el) => {
                     return (
                         <Details detail={el} />
