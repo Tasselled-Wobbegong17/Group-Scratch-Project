@@ -2,11 +2,11 @@
 
 Junior phase group scratch project
 
-We are using the Realty in US api on RapidAPI to get real estate listings
-
 ## Description
 
 As a team of 4, we worked to develop a full-stack real-estate search application. Not Zillow is designed to give users access to a realtime nationwide search engine. Not Zillow authenticates it's users, pulls real-time data, and allows the user to filter by a variety of fields, securely and efficiently.
+
+We are using the 'Realty in US' api on RapidAPI to get real estate listings.
 
 ## Getting Started
 
@@ -36,9 +36,12 @@ As a team of 4, we worked to develop a full-stack real-estate search application
 -User ability to drag and drop favorites
 -GeoJSON mapping that allows user to set search area
 
+![postgreSQL database visualization](/assets/PostgreSQL DB Visualized2.png)
+
 ## Help
 
-Any advise for common problems or issues.
+-Use of DB functionality will require future users to setup there own NoSQL DB instance
+-API
 
 
 ## Authors
