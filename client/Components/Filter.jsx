@@ -51,9 +51,36 @@ const Filter = ({ showFilters, fetchListings }) => {
             <input type="checkbox" name="filterBy" value="city"></input>
             <input type="text" name="filterBy" id="city"></input><br></br>
 
+            <label>Limit Results</label>
+            <input type="checkbox" name="filterBy" value="limit"></input>
+            <input type="text" name="filterBy" id="limit"></input><br></br>
+
             <label>Filter by Area Code</label>
             <input type="checkbox" name="filterBy" value="postal_code"></input>
             <input type="text" name="filterBy" id="postal_code"></input><br></br>
+            
+            <label>Search Radius</label>
+            <input type="checkbox" name="filterBy" value="radius"></input>
+            <input type="text" name="filterBy" id="radius"></input><br></br>
+            
+            <label>Min Bathrooms</label>
+            <input type="checkbox" name="filterBy" value="baths_min"></input>
+            <input type="text" name="filterBy" id="baths_min"></input><br></br>
+
+            <label>Min Bedrooms</label>
+            <input type="checkbox" name="filterBy" value="beds_min"></input>
+            <input type="text" name="filterBy" id="beds_min"></input><br></br>
+
+            <label>Reduced Price</label>
+            <input type="checkbox" name="filterBy" value="reduced"></input><br></br>
+
+            <label>Minimum Price</label>
+            <input type="checkbox" name="filterBy" value="price_min"></input>
+            <input type="text" name="filterBy" id="price_min"></input><br></br>
+
+            <label>Maximum Price</label>
+            <input type="checkbox" name="filterBy" value="price_max"></input>
+            <input type="text" name="filterBy" id="price_max"></input><br></br>
           
             <button onClick={handleClick}className="filterSubmitButton">Submit</button><br></br>
         </div>
