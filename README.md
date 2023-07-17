@@ -4,9 +4,8 @@ Junior phase group scratch project
 
 ## Description
 
-As a team of 4, we worked to develop a full-stack real-estate search application. Not Zillow is designed to give users access to a realtime nationwide search engine. Not Zillow authenticates it's users, pulls real-time data, and allows the user to filter by a variety of fields, securely and efficiently.
+As a team of 4, we worked to develop a full-stack real-estate search application. GPREB is designed to give users access to a realtime nationwide search engine. GPREB authenticates it's users, pulls real-time data, and allows the user to filter by a variety of fields, securely and efficiently.
 
-We are using the 'Realty in US' api on RapidAPI to get real estate listings.
 
 ## Getting Started
 
@@ -28,7 +27,9 @@ We are using the 'Realty in US' api on RapidAPI to get real estate listings.
 
 ## Tech
 
--react, express, NoSQL, HTML, SCSS
+-react, express, SQL, HTML, SCSS
+
+We are using the 'Realty in US' api on RapidAPI to get real estate listings.
 
 ## Future Iterations
 
@@ -40,7 +41,7 @@ We are using the 'Realty in US' api on RapidAPI to get real estate listings.
 
 ## Help
 
--Use of DB functionality will require future users to setup there own NoSQL DB instance
+-Use of DB functionality will require future users to setup there own SQL DB instance
 -API
 
 
