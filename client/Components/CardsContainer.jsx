@@ -1,13 +1,13 @@
 import React from 'react';
 import Cards from './Cards.jsx'
-import response from '../../a-few-listings.json'
+// import response from '../../a-few-listings.json'
 
-const CardsContainer = () => {
+const CardsContainer = (props) => {
 
     return (
 
         <div className="card-container">
-            {response.listings.map((listing) => {
+            {props.listings.listings.map((listing) => {
                 return (
                     <div className="cards-holder">
                         <Cards listing={listing} />
