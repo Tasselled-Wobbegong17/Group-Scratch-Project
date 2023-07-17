@@ -38,7 +38,7 @@ const App = () => {
       <div className='top-header'>
         <h3>Not Zillow</h3>
       </div>
-      <button onClick={showModal} id="filterButton" >{showFilters ? 'Click to Hide Filters' : 'Click to Show Filters'}</button>
+      <button onClick={showModal} id="filter-button" >{showFilters ? 'Click to Hide Filters' : 'Click to Show Filters'}</button>
       <Filter fetchListings={fetchListings}
               showFilters={showFilters} />
       <CardsContainer listings={listings} />
