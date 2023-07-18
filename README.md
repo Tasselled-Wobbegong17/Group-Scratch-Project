@@ -21,9 +21,9 @@ As a team of 4, we worked to develop a full-stack real-estate search application
 
 ### Executing program
 
-   Run visuals  ```npm run dev```  
-   Run server and visuals ```npm run devserver```  
-   Navigate to 'localhost: 8080' in your browser
+   Run visuals  ```npm run dev```.  
+   Run server and visuals ```npm run devserver```.  
+   Navigate to 'localhost: 8080' in your browser.
 
 ## Tech
 
@@ -33,15 +33,15 @@ We are using the 'Realty in US' api on RapidAPI to get real estate listings.
 
 ## Future Iterations
 
--DB is already setup for future extensions
--User ability to drag and drop favorites
--GeoJSON mapping that allows user to set search area
+-DB is already setup for future extensions  
+-User ability to drag and drop favorites  
+-GeoJSON mapping that allows user to set search area  
 
 ![postgreSQL database visualization](./assets/PostgreSQL_DB_Visualized2.png)
 
 ## Help
 
--Use of DB functionality will require future users to setup there own SQL DB instance
+-Use of DB functionality will require future users to setup their own SQL DB instance, OR contact the previous iterator for access to the original database (which is hosted on Supabase).  
 -API
 
 
