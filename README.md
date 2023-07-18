@@ -21,8 +21,8 @@ As a team of 4, we worked to develop a full-stack real-estate search application
 
 ### Executing program
 
-   Run visuals  ```npm run dev```
-   Run server and visuals ```npm run devserver```
+   Run visuals  ```npm run dev```  
+   Run server and visuals ```npm run devserver```  
    Navigate to 'localhost: 8080' in your browser
 
 ## Tech
